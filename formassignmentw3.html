@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get to know you</title>
+
+    <style>
+        
+        h1 {
+            text-align: center;
+        }
+        form {
+            
+            border: 5px solid #420544;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(161, 31, 221, 0.1);
+            background-color: #eb6dc1;
+            text-align: center;
+            background-color: #e9abe4; /* Light blue background color */
+        }
+    
+
+       
+    </style>
+</head>
+<body>
+    <form action="/submit-survey" method="post">
+        <h1>Get to know you</h1>
+    
+        <label for="name">Name:</label>
+        <input type="text" id="name" type="text" placeholder="Zemtsova">     
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <br><br>
+
+        <label for="Your favorite food">Your favorite food:</label>
+        <input type="radio" id="Russian" name="Russian" value="Russian">
+        <label for="Russian">Russian</label>
+        <input type="radio" id="Mexican" name="Mexican" value="Mexicane">
+        <label for="Mexican">Mexican</label>
+        <input type="radio" id="Italian" name="Italian" value="Italian">
+        <label for="Italian">Italian</label>
+        <br><br>
+        <label for="Your pet preference">Your pet preference:</label>
+        <input type="radio" id="Dog" name="Dog" value="Dog">
+        <label for="Dog">Dog</label>
+        <input type="radio" id="Cat" name="Cat" value="Cat">
+        <label for="Cat">Cat</label>
+        <input type="radio" id="no pets for me!" name="no pets for me!" value="no pets for me!">
+        <label for="no pets for me!">no pets for me!</label>
+        <br><br>
+        <label for="interests">Interests:</label>
+        
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="travel" name="interests" value="travel">
+        <label for="travel">Travel</label>
+        <input type="checkbox" id="movies" name="movies" value="movies">
+        <label for="movies">Movies</label>
+        <br><br>
+               <label for="Continent you are going to visit next">Continent you are going to visit next:</label>
+        <select id="Continent you are going to visit next" name="Continent you are going to visit next">
+            <option value="Africa">Africa</option>
+            <option value="South America">South America</option>
+            <option value="North America">North America</option>
+            <option value="Australia">Australia</option>
+            <option value="Eurasia">Eurasia</option>
+            <option value="Antarctica">Antarctica</option>
+        </select>,<br><br>
+        <img src="continents-map.png" width="25%" height="25%"
+        <br><br>
+
+        <label for="comments">Comments:</label>
+        <br><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <form action="/submit-survey" method="post">
+        <h1>Survey Form</h1>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" type="text" placeholder="Zemtsova">     
+        <br><br>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        <label for="interests">Interests:</label>
+        
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="travel" name="interests" value="travel">
+        <label for="travel">Travel</label>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="united_states">United States</option>
+            <option value="russia">Russia</option>
+            <option value="mexico">Mexico</option>
+            <option value="canada">Canada</option>
+        </select>
+        <br><br>
+
+        <label for="comments">Comments:</label>
+        <br><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
